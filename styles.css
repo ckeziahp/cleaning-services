@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* width: 100%; */
+}
+
+.header-area .header-top {
+  background: #2e0000
+}
+
+#hero {
+  background-image: url(../assests/images/hero-background.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: 100% 100%;
+
+}
+
+#hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+
+}
+
+/* menu
+.nav {
+    /* width: 100%; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px;
+}
+
+
+.nav .logo h1 {
+  font-weight: 600;
+  font-family: "Jost" 'sans serif';
+  color: #000000;
+}
+
+.nav .logo b {
+  color: #ff511c;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul li {
+  margin-right: 30px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500px;
+  font-family: "Jost", 'sans serif';
+  font-size: 17px;
+}
+
+/* =======Active========== */
+.nav ul .active::after {
+  content: '';
+  width: 50%;
+  height: 3px;
+  background-color: #ff511c;
+  display: flex;
+  position: relative;
+  margin-left: 10px;
+}
+
+*/
