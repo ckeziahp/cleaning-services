@@ -5,9 +5,53 @@
   /* width: 100%; */
 }
 
-.header-area .header-top {
-  background: #2e0000
+/* nav area */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 500;
 }
+
+#nav-links {
+  display: flex;
+  column-gap: 40px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+}
+
+.bars {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* .header-area .header-top {
+  background: #2e0000;
+  display: center;
+  justify-content: space-between;
+  align-items:center;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.header-area .header-bottom {
+  padding: 15px 20px;
+
+} */
+
+/* About Us */
 
 #hero {
   background-image: url(../assests/images/hero-background.jpg);
