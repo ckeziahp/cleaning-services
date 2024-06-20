@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
   /* width: 100%; */
 } 
 
@@ -164,4 +165,46 @@ nav.scrolled .bar1, nav.scrolled .bar3 {
   /* background-size: cover; */
   background-size: 100%  100%;
 
+}
+#hero-overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#subtext-one{
+font-size: 40px;
+display: flex;
+align-items:center ;
+padding-left: 50px;
+}
+
+
+.menu-button{
+/* position: fixed; */
+background-color: white;
+color: #ff0026;
+font-size: 12px;
+border: none;
+padding: 5px 10px;
+text-transform: uppercase;
+border-radius: 5px;
+}
+
+.menu-button:hover{
+    background-color:  #ec1d25;
+    line-height: 1.1;
+    color: white;
 }
