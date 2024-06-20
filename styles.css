@@ -37,7 +37,7 @@ body{
 
 
   /* nav-area */
-  nav {
+  .top-header{
     display: flex;
     justify-content: space-between;
     padding: 10px 50px;
@@ -45,6 +45,27 @@ body{
     position: fixed;
     width: 100vw;
     z-index: 500;
+  }
+
+  #nav-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 500;
+    background-color: #ff0026;
+  }
+  #nav-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 500;
+   
   }
   
   #nav-links {
@@ -188,7 +209,7 @@ header{
 font-size: 40px;
 display: flex;
 align-items:center ;
-padding-left: 50px;
+padding-left: 40px 0 0 0;
 }
 
 
