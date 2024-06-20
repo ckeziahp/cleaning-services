@@ -37,25 +37,27 @@ body{
 
 
   /* nav-area */
-  .top-header{
+  /* .top-header{
     display: flex;
     justify-content: space-between;
     padding: 10px 50px;
     align-items: center;
     position: fixed;
-    width: 100vw;
-    z-index: 500;
+    width: 100vw; */
+    /* z-index: 500; */
+  /* } */
+  .header-info-right ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
   }
 
-  #nav-1{
+    .top-header{
     display: flex;
     justify-content: space-between;
-    padding: 10px 50px;
     align-items: center;
-    position: fixed;
-    width: 100vw;
-    z-index: 500;
-    background-color: #ff0026;
+    /* background-color: #ff0026; */
+   
   }
   #nav-2 {
     display: flex;
@@ -64,10 +66,10 @@ body{
     align-items: center;
     position: fixed;
     width: 100vw;
-    z-index: 500;
+    /* z-index: 500; */
+    background-color: #1b0303;
    
   }
-  
   #nav-links {
     display: flex;
     column-gap: 40px;
@@ -153,7 +155,7 @@ nav.scrolled {
 nav.scrolled #nav-links ul li a {
   color: rgb(0, 0, 0);
 }
-nav.scrolled #nav-links ul li a :hover{
+nav.scrolled #nav-links ul li a:hover{
   color: #d61c22;
 }
 
@@ -179,13 +181,17 @@ nav.scrolled .bar1, nav.scrolled .bar3 {
 
 /* hero-info */
 #hero{
-  background-image: url(./assets/images/hero-background.jpg);
-  width: 100vw;
-  height: 100vh;
+  background-image: url(./assets/images/team-members.jpg);
+  width: 100%;
+  height: inherit;
   background-repeat: no-repeat;
   /* background-size: cover; */
-  background-size: 100%  100%;
+  background-size: cover;
 
+}
+#hero{
+  height: 100vh;
+  width: 100vw;
 }
 #hero-overlay{
   background-color: rgba(0, 0, 0, 0.5);
@@ -228,4 +234,75 @@ border-radius: 5px;
     background-color:  #ec1d25;
     line-height: 1.1;
     color: white;
+}
+
+/* about-sec */
+#about {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  align-items: center;
+  /* row-gap: 20px; */
+  
+}
+
+.sub-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sub-header :first-child {
+  font-size: 30px;
+  line-height: 1.2;
+  /* color: #d61c22;  */
+  color: #ff511c;
+}
+
+.sub-header :nth-child(2) {
+  color: #222222;
+  font-size: 50px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+#sub-headertext {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  text-align: center;
+  padding: 30px 180px;
+}
+
+#about-link {
+  text-align: center;
+}
+
+.our-story {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.our-story:hover {
+  color: #ff511c;
+
+}
+
+#about-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  border-radius: 10px;
+  position: relative;
+
 }
