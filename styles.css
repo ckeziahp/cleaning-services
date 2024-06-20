@@ -1,127 +1,167 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* width: 100%; */
-}
+} 
 
-/* nav area */
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 50px;
-  align-items: center;
-  position: fixed;
-  width: 100vw;
-  z-index: 500;
-}
-
-#nav-links {
-  display: flex;
-  column-gap: 40px;
-  text-transform: uppercase;
-  color: white;
-  font-size: 14px;
-}
-
-.bars {
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-/* .header-area .header-top {
-  background: #2e0000;
-  display: center;
-  justify-content: space-between;
-  align-items:center;
+/* fonts */
+.roboto-regular {
   font-family: "Roboto", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+}
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.header-area .header-bottom {
-  padding: 15px 20px;
 
-} */
 
-/* About Us */
 
-#hero {
-  background-image: url(../assests/images/hero-background.jpg);
+  /* nav-area */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 500;
+  }
+  
+  #nav-links {
+    display: flex;
+    column-gap: 40px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .bars {
+    cursor: pointer;
+  }
+
+  .bars:hover .bar1,
+.bars:hover .bar3 {
+  background-color: #d61c22;
+}
+
+
+.bar1, .bar3 {
+  display: flex;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.icons-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icons-header a {
+  color: white;
+  margin: 0 10px;
+}
+
+#nav ul {
+  list-style: none;
+  background: rgba(0, 0, 0, 0.0);
+  overflow: hidden;
+  color: white;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* New styles for scrolled state */
+nav.scrolled {
+  background: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.3s;
+}
+
+nav.scrolled #nav-links ul li a {
+  color: rgb(0, 0, 0);
+}
+nav.scrolled #nav-links ul li a :hover{
+  color: #d61c22;
+}
+
+#nav-links ul li a:hover {
+  color: #d61c22;
+}
+
+.icons-header a :hover {
+  color: #d61c22;
+}
+
+nav.scrolled .icons-header a {
+  color: rgb(0, 0, 0);
+}
+nav.scrolled .icons-header a :hover{
+  color: #d61c22;
+}
+
+nav.scrolled .bar1, nav.scrolled .bar3 {
+  background-color: #000;
+}
+
+
+/* hero-info */
+#hero{
+  background-image: url(./assets/images/hero-background.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
   /* background-size: cover; */
-  background-size: 100% 100%;
+  background-size: 100%  100%;
 
 }
-
-#hero-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 20px;
-
-}
-
-/* menu
-.nav {
-    /* width: 100%; */
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 30px;
-}
-
-
-.nav .logo h1 {
-  font-weight: 600;
-  font-family: "Jost" 'sans serif';
-  color: #000000;
-}
-
-.nav .logo b {
-  color: #ff511c;
-}
-
-.nav ul {
-  display: flex;
-  list-style: none;
-}
-
-.nav ul li {
-  margin-right: 30px;
-}
-
-.nav ul li a {
-  text-decoration: none;
-  color: #000000;
-  font-weight: 500px;
-  font-family: "Jost", 'sans serif';
-  font-size: 17px;
-}
-
-/* =======Active========== */
-.nav ul .active::after {
-  content: '';
-  width: 50%;
-  height: 3px;
-  background-color: #ff511c;
-  display: flex;
-  position: relative;
-  margin-left: 10px;
-}
-
-*/
